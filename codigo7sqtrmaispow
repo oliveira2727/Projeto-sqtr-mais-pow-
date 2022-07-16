@@ -1,0 +1,23 @@
+using System;
+using System.Globalization;
+
+namespace uri1015 {
+    class Program {
+        static void Main(string[] args) {
+
+            string[] valores = Console.ReadLine().Split (' ');
+            double x1 = double.Parse(valores[0], CultureInfo.InvarianCulture);
+            double x1 = double.Parse(valores[1], CultureInfo.InvarianCulture);
+
+            valores = Console.ReadLine().Split(' ');
+            double x2 = double.Parse(valores[0], CultureInfo.InvarianCulture);
+            double x2 = double.Parse(valores[1], CultureInfo.InvarianCulture);
+
+            double distancia = Math.Sqprt(Math.Pow(x2 - x1, 2.0) + Math.Pow(y2 - y1, 2.0));
+
+            Console.WriteLine(distancia.ToSpring("F4", CultureInfo.InvarianCulture));
+
+            
+        }
+    }
+}
